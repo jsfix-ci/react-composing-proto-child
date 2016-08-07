@@ -1,0 +1,5 @@
+--reporter spec
+--growl
+--ui bdd
+--compilers js:babel-register
+test/index.js
