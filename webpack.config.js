@@ -29,14 +29,14 @@ const config = {
       {
         test: /\.jsx?/,
         include: paths.src,
-        loaders: optimize ? ['babel'] : ['react-hot', 'babel'],
+        loaders: optimize ? ['babel'] : [/*'react-hot',*/ 'babel'],
         exclude: /node_modules/
       }
     ]
   },
   plugins: [
-    new webpack.optimize.OccurrenceOrderPlugin(),
-    new webpack.HotModuleReplacementPlugin()
+    new webpack.optimize.OccurrenceOrderPlugin()//,
+//    new webpack.HotModuleReplacementPlugin()
   ],
   devtool: 'eval',
   output: {
